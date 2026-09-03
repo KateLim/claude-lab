@@ -23,10 +23,14 @@ python3 server.py --host 0.0.0.0      # 외부에서 접속 (인증 없음 — �
 저장소를 클론하면 **설치 단계 없이 바로 돕니다.** 파이썬 3.9 이상만 있으면 됩니다.
 
 ```
-git clone <저장소 주소> && cd <디렉터리>
+git clone git@github.com:KateLim/claude-lab.git
+cd claude-lab/dividend-planner
 python3 tools/selfcheck.py --start     # 서버를 띄워 전체를 점검하고 끔
 python3 server.py                      # http://127.0.0.1:8770
 ```
+
+이 프로젝트는 `KateLim/claude-lab` 저장소의 `dividend-planner/` 하위 디렉터리에
+있습니다. 명령은 모두 그 디렉터리 안에서 실행합니다.
 
 `make` 가 있으면 `make run` · `make test` · `make check` · `make refresh` 로도 됩니다.
 

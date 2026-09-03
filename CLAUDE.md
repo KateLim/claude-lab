@@ -3,6 +3,9 @@
 노후 배당 목표를 역산하고 포트폴리오를 설계하는 **로컬 웹 서비스**. 파이썬 표준
 라이브러리만 쓰고 프런트엔드는 빌드 단계가 없다. 설치할 것이 없다.
 
+`KateLim/claude-lab` 저장소의 `dividend-planner/` 하위 디렉터리다. 아래 명령은 모두
+이 디렉터리 안에서 실행한다.
+
 ```
 python3 server.py                              # http://127.0.0.1:8770
 python3 -m unittest discover -s tests -t .     # 55개, 네트워크 없이 돎
@@ -95,6 +98,15 @@ python3 tools/selfcheck.py --start             # 엔드포인트 전체를 실�
 - MDD·총수익 CAGR을 일별 데이터로 계산 (지금은 월말 종가 기준이라 원본과 종목당
   최대 10%p 차이)
 - 세금 모델 정교화 (지금은 배당 원천징수율만 단순 적용)
+
+## 저장소 위치
+
+`claude-lab` 은 여러 실습을 모아 두는 저장소이고, 이 프로젝트는 그 안의 한 디렉터리다.
+루트에는 `claude-projects.tar.gz` 백업이 함께 있다 — 건드리지 않는다.
+
+프로젝트 히스토리는 `git subtree` 로 넣었으므로 `dividend-planner/` 안의 커밋 기록이
+그대로 남아 있다. 이 디렉터리만 따로 떼어 새 저장소로 옮기려면
+`git subtree split --prefix=dividend-planner` 을 쓰면 된다.
 
 ## 코드 스타일
 
