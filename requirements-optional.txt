@@ -1,0 +1,7 @@
+# 이 프로젝트는 표준 라이브러리만으로 돕니다. 아래는 켜고 싶을 때만 설치하세요.
+#
+#   pip install -r requirements-optional.txt
+#
+# anthropic — 설명 패널을 Claude 가 쓰게 합니다 (ANTHROPIC_API_KEY 도 필요).
+#             없으면 dividend_planner/narrative.py 의 규칙 기반 생성기가 씁니다.
+anthropic>=0.100
